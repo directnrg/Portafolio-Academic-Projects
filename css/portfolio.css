@@ -59,6 +59,13 @@
 
 }
 
+.Center-no-type {
+  list-style-position: inside;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+}
+
 .card {
     display: flex;
     margin-left: 20px;
