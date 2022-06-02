@@ -6,9 +6,8 @@ const formGeo = document.getElementById("formGeoLoc");
 const input = document.querySelector(".top-banner input");
 const msg = document.querySelector(".top-banner .msg");
 const list = document.querySelector(".ajax-section .cities");
-const apiKey = process.env.APIKEY;
-const googleApiKey = process.env.GOOGLEAPIKEY;
-
+const apiKey = "299afb200bead9d9396ca95234d219ad";
+const googleApiKey = "AIzaSyAjczwWzjEDfPCCk07YamMsFb1BDLdXjBI";
 /* SECTION location typed by user */
 form.addEventListener("submit", e => {
   e.preventDefault();
