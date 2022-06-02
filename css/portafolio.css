@@ -1,0 +1,249 @@
+/*Date: Octuber 03, 2021 */
+
+.logoSize {
+    height: 100%;
+    width: 70px;
+}
+
+.logoSizeBg {
+    background-image: "./assets/images/logoFS.png";
+    width: 100%;
+    height: 1000px;
+}
+
+.centeredContentXL {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+.mediumSizedImgs {
+    height: auto;
+    width: 200px;
+    float: right;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.largerImgs {
+  height: auto;
+  width: 400px;
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  box-shadow:
+2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.centeredImgs-md{
+    height: auto;
+    width: 200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 18rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: unset;
+
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn {
+    display: block;
+}
+
+.generalMargins {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.title-text-margins {
+  margin-top: 30px;
+}
+
+.larger-bold-text {
+  font-size:1.5cm;
+  font-weight: bolder;
+}
+
+.d-flex {
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.navBarIcons {
+   margin-right: 6px;
+}
+
+.flexItems {
+    display:flex !important;
+    padding-left: 50px;
+}
+
+.accordionImgs {
+    height: auto;
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+/*footer social and copy*/
+.social-item {
+    padding: 10px;
+}
+
+.fa-github:before {
+    color: aliceblue;
+}
+
+.fa-linkedin:before {
+    color: aliceblue;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    padding:0;
+    marker:none;
+    list-style-type: none;
+}
+
+.navbar-brand {
+    margin-right: 0px;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    align-content: center;
+}
+
+.footer{
+ position: fixed;
+}
+
+.footer-link {
+color:white;
+} 
+
+/* animated skill bar*/
+.center-skills {
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+ 
+  
+  .container-skills {
+   
+    padding: 60px;
+    display: flex;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 100px;
+    margin: auto 0;
+    align-items: center;
+    align-content:center;
+   
+
+  }
+  .container .box {
+    width: 100%;
+    
+  }
+  
+  .container .box {
+    display: block;
+    text-align: center;
+    color: rgb(17, 16, 16);
+   
+    font-weight: 900;
+    font-size:xx-large;
+    
+  }
+ .text-chart{
+   font-size: xx-large;
+   font-weight: bolder;
+ }
+
+ .chart {
+  font-size: larger;
+  font-weight: bolder;
+  
+ }
+
+ /* .percent {
+ 
+ } */
+
+  .container .box .chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 160px;
+    height: 160px;
+    color: rgb(19, 17, 17);
+    border-radius: 50%;
+  }
+  .container .box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 420px) and (max-width: 659px) {
+    .container {
+      grid-template-columns: repeat(2, 160px);
+    }
+  }
+  
+  @media (min-width: 660px) {
+    .container {
+      grid-template-columns: repeat(3, 160px);
+    }
+  }
+  

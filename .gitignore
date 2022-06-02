@@ -1,0 +1,9 @@
+node_modules/
+node/
+node_modules
+gulpfile.js
+.env
+package.json
+package-lock.json
+portafolio_contact.html
+contact-html-code-later.html

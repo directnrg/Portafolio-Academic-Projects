@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BMR Calculator</title>
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bmr_calculator.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <script src="./javascript/bmr_calculator.js"></script>
+
+</head>
+<a href="./index.html" class="home-link"><b>Home</b></a>
+<body>
+  <h1 class="centered-text">BMR Calculator</h1>
+  <div class="tab">
+    <button class="tablinks" onclick="openCalc(event, 'Imperial')" id="defaultOpen">Imperial</button>
+    <button class="tablinks" onclick="openCalc(event, 'Metric')">Metric</button>
+  </div>
+
+  <div id="Imperial" class="tab-content centered-text main">
+    <h1>Imperial BMR Calculator</h1>
+    <p>The original Harris–Benedict equations published in 1918 and 1919.</p>
+    <form name="bmrform_imperial">
+      <label for="gender">Gender</label>
+      <select title="gender" name="gender" id="genderImp">
+        <option selected="selected" disabled>Select</option>
+        <option id="manImperial" value="Man">Man</option>
+        <option id="womanImperial" value="Woman">Woman</option>
+      </select><br><br>
+      <p><b>Your Height</b></p>
+      <label for="feet">Feet
+      <input type="number" id="feet"></label>
+      <label for="inches">Inches
+      <input type="number" id="inches"></label><br><br>
+      <p><b>Your Weight</b></p>
+      <label for="stones">Stones
+      <input type="number" id="stones"></label>
+      <label for="pounds">Pounds
+      <input type="number" id="pounds"></label><br><br>
+      <p><b>Your Age (in numbers)</b></p>
+      <label for="AgeImperial">Age
+      <input type="number" id="ageImperial"></label><br>
+
+      <div class="left-text">
+        <h3>Select your Activity level</h3>
+        <label for="sedentary" class="label-radio"><input type="radio" name="calories" id="sedentaryImp">
+        I am Sedentary (little or no exercise)</label><br>
+        <label for="light" class="label-radio"><input type="radio" name="calories" id="lightImp">
+        I am lightly active (light exercise or sports 1-3 days per
+          week)</label><br>
+          <label for="moderate" class="label-radio"><input type="radio" name="calories" id="moderateImp">
+        I am moderately active (moderate exercise or sports 3-5 days per
+          week)</label><br>
+          <label for="hard" class="label-radio"><input type="radio" name="calories" id="hardImp">
+        I am very active (hard exercive or sports 6-7 days per
+          week)</label><br>
+          <label for="veryHard" class="label-radio"><input type="radio" name="calories" id="veryHardImp">
+        I am super active (very hard exercise or sports and a phsical job or
+          2x training)</label><br><br>
+      </div>
+
+      <button type="button" class="btn default centered-text" name="calculate_imperial" id="calculate_imperial"
+        onclick="calculateBmrImp()">Calculate Imperial
+        BMR</button>
+    </form>
+  </div>
+  <div id="Metric" class="tab-content centered-text main">
+    <h1>Metric BMR Calculator</h1>
+    <p>The original Harris–Benedict equations published in 1918 and 1919.</p>
+    <form name="bmrform_metric">
+      <label for="gender">Gender</label>
+      <select title="gender" name="gender" id="genderMet">
+        <option selected="selected" disabled>Select</option>
+        <option id="manMetric" value="Man">Man</option>
+        <option id="womanMetric" value="Woman">Woman</option>
+      </select><br><br>
+      <p><b>Your Height</b></p>
+      <label for="meters">Meters
+      <input type="number" id="meters"></label>
+      <label for="Centimeters">Centimeters
+      <input type="number" id="centiMeters"></label><br><br>
+      <p><b>Your Weight</b></p>
+      <label for="kilograms">Kilograms
+      <input type="number" id="kilograms"></label><br><br>
+      <p><b>Your Age (in numbers)</b></p>
+      <label for="Age">Age
+      <input type="number" id="ageMetric"></label><br>
+
+      <div class="left-text">
+        <h3>Select your Activity level</h3>
+        <label for="sedentary" class="label-radio"><input type="radio" name="calories" id="sedentaryMet">
+        I am Sedentary (little or no exercise)</label><br>
+        <label for="light" class="label-radio"><input type="radio" name="calories" id="lightMet">
+        I am lightly active (light exercise or sports 1-3 days per
+          week)</label><br>
+        <label for="moderate" class="label-radio"><input type="radio" name="calories" id="moderateMet">
+        I am moderately active (moderate exercise or sports 3-5 days per
+          week)</label><br>
+        <label for="hard" class="label-radio"><input type="radio" name="calories" id="hardMet">
+        I am very active (hard exercive or sports 6-7 days per
+          week)</label><br>
+        <label for="veryhard" class="label-radio"><input type="radio" name="calories" id="veryHardMet">
+        I am super active (very hard exercise or sports and a phsical job or
+          2x training)</label><br><br>
+      </div>
+
+      <button type="button" class="btn default" name="calculate_metric" id="calculate_metric"
+        onclick="calculateBmrMet()">Calculate Metric
+        BMR</button>
+    </form>
+  </div>
+</body>
+
+</html>
