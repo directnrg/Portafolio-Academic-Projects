@@ -1,6 +1,3 @@
-//configuration of enviroment variables for secured passwords and access urls
-const dotenv = require('dotenv').config();
-
 const form = document.querySelector(".top-banner form");
 const formGeo = document.getElementById("formGeoLoc");
 const input = document.querySelector(".top-banner input");
