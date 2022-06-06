@@ -66,6 +66,17 @@
   text-align: center;
 }
 
+.container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+}
+
 .card {
     display: flex;
     margin-left: 20px;
