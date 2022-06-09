@@ -57,21 +57,17 @@
         <br>
     </div>
     <div class="container-projects">
-        <!-- project 1-->
+
+        <!-- project 9-->
         <div class="card">
-            <a href="https://multiverse-survey-site.herokuapp.com/" target="_blank" rel="noopener"><img
-                    alt="main_image_surveysite.png" class="card-img-top"
-                    src="./imgs/survey_site/Multiverse_Design_LOGO.png" /></a>
+            <a href="catch_floppy.html" target="_blank" rel="noopener"><img alt="profile.png" class="card-img-top"
+                    src="./imgs/floppy_game_imgs/cover_img_floppy_game.png" /></a>
             <div class="card-body">
-                <h5 class="card-title">Survey Site</h5>
-                <p class="card-text">Team project developed with Node.js and EJS for dynamic HTML with partials. The
-                    site
-                    allows registered users to create surveys; they can create and edit
-                    surveys, while regular
-                    users can only view the created surveys by registered users as public surveys only if the expiration
-                    period of the survey has not passed. The results of guest users votes for each survey are only
-                    visible
-                    to the registered users with a simple chart.
+                <h5 class="card-title">Catch Floppy Javascript Game</h5>
+                <p class="card-text">Game developed to work in HTML. All functions are set in Javascript. The way to
+                    play it consist in catching the bird as many times as possible in the attempt to get the highest
+                    score.
+                    Speed will increase after every catch. What will be your score?
                 </p>
 
             </div>
@@ -167,19 +163,76 @@
 
             </div>
         </div>
-
-        <!-- project 9-->
+        <!-- project 1-->
         <div class="card">
-            <a href="catch_floppy.html" target="_blank" rel="noopener"><img alt="profile.png" class="card-img-top"
-                    src="./imgs/floppy_game_imgs/cover_img_floppy_game.png" /></a>
+            <a href="https://multiverse-survey-site.herokuapp.com/" target="_blank" rel="noopener"><img
+                    alt="main_image_surveysite.png" class="card-img-top"
+                    src="./imgs/survey_site/Multiverse_Design_LOGO.png" /></a>
             <div class="card-body">
-                <h5 class="card-title">Catch Floppy Javascript Game</h5>
-                <p class="card-text">Game developed to work in HTML. All functions are set in Javascript. The way to
-                    play it consist in catching the bird as many times as possible in the attempt to get the highest
-                    score.
-                    Speed will increase after every catch. What will be your score?
+                <h5 class="card-title">Survey Site</h5>
+                <p class="card-text">Team project developed with Node.js and EJS for dynamic HTML with partials. The
+                    site
+                    allows registered users to create surveys; they can create and edit
+                    surveys, while regular
+                    users can only view the created surveys by registered users as public surveys only if the expiration
+                    period of the survey has not passed. The results of guest users votes for each survey are only
+                    visible
+                    to the registered users with a simple chart.
                 </p>
 
+            </div>
+        </div>
+
+        <!-- project 10-->
+        <div class="card" id="oer-projects">
+            <img style="display:block;" id="cover-img-oer" alt="oer_cover_image.png" class="card-img-top fadeOut"
+                src="./imgs/coop_oer/pressbooks_cover.png" onclick="toggleDisplayProjects()" />
+            <div class="card-body">
+                <h5 class="card-title">Pressbooks projects - Centennial College OER</h5>
+                <p class="card-text" id="oer-text">Projects developed for COLLab department from
+                    Centennial
+                    College. The projects are based on the OER (Open Educational Resources) standard.
+                    Developed in HTML, CSS mainly, with pressbooks platform. <br>
+                    Content creation consisted in adaptations to the content,
+                    design, while always having in mind the accesibility. All content is fully compatible with text
+                    readers for accesibility purposes.
+                </p>
+                <button type="button" class="btn btn-primary" id="oer-projects-btn">See all projects</button>
+
+                <div id="projects-holder" class="projects-holder" style="display:none;">
+                    <div class="project-card">
+                        <a href="https://ecampusontario.pressbooks.pub/careersuccessguide/" target="_blank"
+                            rel="noopener"><img alt="project1.png" class="card-img-project"
+                                src="./imgs/coop_oer/oer_project_1.png" /></a>
+                        <div>
+                            <p><b>Centennial College Career Success Guide</b></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://ecampusontario.pressbooks.pub/engl250oer/" target="_blank" rel="noopener"><img
+                                alt="project2.png" class="card-img-project"
+                                src="./imgs/coop_oer/oer_project_2.png" /></a>
+                        <div>
+                            <p><b>Writing in a Technical Environment (First Edition)</b></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://ecampusontario.pressbooks.pub/centennialcdev114/" target="_blank"
+                            rel="noopener"><img alt="project3.png" class="card-img-project"
+                                src="./imgs/coop_oer/oer_project_3.png" /></a>
+                        <div>
+                            <p><b>Topics in Sustainable Community Development</b></p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <a href="https://ecampusontario.pressbooks.pub/centennialdrugshealthaddictionsbehaviour/"
+                            target="_blank" rel="noopener"><img alt="project4.png" class="card-img-project"
+                                src="./imgs/coop_oer/oer_project_4.png" /></a>
+                        <div>
+                            <p><b>Drugs, Health, Addictions & Behaviour – 1st Canadian Edition</b></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -190,6 +243,33 @@
     <br />
     <br />
     <br />
-</body>
+    <br />
 
+</body>
+<script src="./javascript/portfolio.js"></script>
+<footer class="footer">
+    <nav class="navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-center align-items-center text-center">
+        <div class="container-social d-flex justify-content-center align-items-center text-center">
+            <ul class="social-list">
+                <li class="social-item">
+                    <a class="social-link" href="https://www.linkedin.com/in/fabiansotopalacio/"
+                        aria-label="linkedIn Icon">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://github.com/directnrg" aria-label="github icon">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="container-fluid">
+                <div><a href="mailto:fsotopal@my.centennialcollege.ca"
+                        class="footer-link ">fsotopal@my.centennialcollege.ca</a></div>
+
+                <div><a class="navbar-brand" href="#">Copyright &copy; 2022 - Fabian Soto</a></div>
+            </div>
+        </div>
+    </nav>
+</footer>
 </html>

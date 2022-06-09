@@ -59,6 +59,14 @@
 
 }
 
+#oer-projects #cover-img-oer {
+  width: 280px;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .Center-no-type {
   list-style-position: inside;
   justify-content: center;
@@ -78,18 +86,86 @@
 }
 
 .card {
-    display: flex;
+    
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 18rem;
+    width: 407px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
     align-items: center;
     flex-direction: unset;
+    transition: all 0.5s ease-out;
+  transition-duration: 0.5s;
 
 }
 
+.projects-holder {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-img-project {
+  height: auto;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+}
+.project-card {
+  flex: 33.33%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    width: min-content;
+}
+
+@keyframes fadeOut {
+  100% {opacity: 1;}
+  0% {opacity: 0;}
+} 
+
+.fadeOut {
+  animation: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.card-modified {
+ 
+  margin-left: 20px;
+    margin-bottom: 20px;
+    width: 34rem;
+    text-align: center;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    transition: all 0.5s ease-out;
+    transition-duration: 0.5s;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
 .card-body {
     text-align: center;
 }
