@@ -5,90 +5,85 @@
     <title>Fabian Soto - Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google Fonts-->
-
     <link rel="icon" href="./imgs/portfolio_imgs/logoFS_favicon.png">
     <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-   <script src="./javascript/portfolio.js"></script>
-    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/f4679b3d7b.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f4679b3d7b.js" crossorigin="anonymous"></script>
+  
+</head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <a class="navbar-brand" href="./index.html">
                     <img class="logoSize" src="./imgs/portfolio_imgs/logoFS.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html"><i class="fas fa-couch navBarIcons"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./portfolio_about.html"><i class="fas fa-child navBarIcons"></i>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html"><i class="fas fa-couch navBarIcons"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio_about.html"><i class="fas fa-child navBarIcons"></i>
 
-                                About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./portfolio_projects.html"><i
-                                    class="fas fa-puzzle-piece navBarIcons"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio_projects.html"><i
+                                class="fas fa-puzzle-piece navBarIcons"></i>
 
-                                Projects</a>
-                        </li>
-                       
-                    </ul>
-                </div>
+                            Projects</a>
+                    </li>
+
+                </ul>
             </div>
+
         </nav>
     </header>
     <!-- Introduction -->
-    <div class="container text-center">
-        <br>
-        <h1>Welcome to my Portfolio</h1>
-        <br>
-    </div>
-    <div class="d-flex justify-content-center">
-        <!-- card 1 bootstrap-->
-        <div class="card">
-            <img alt="profile.png" class="card-img-top" src="./imgs/portfolio_imgs/Fabian - profile 2022.png" />
-            <div class="card-body">
-                <h5 class="card-title">Hello! this is me</h5>
-                <p class="card-text">Find some key information about who I am</p>
-                <a href="./portfolio_about.html" class="btn btn-primary">About me</a>
-            </div>
+    <div class="content">
+        <div class="container text-center">
+            <br>
+            <h1>Welcome to my Portfolio</h1>
+            <br>
         </div>
-        <!-- end of card 1 -->
-
-
-
-        <!-- card 3 bootstrap-->
-        <div class="card">
-            <img alt="projects.png" class="card-img-top" src="./imgs/portfolio_imgs/pexels-lukas-669615.jpg" />
-            <div class="card-body">
-                <h5 class="card-title">Projects</h5>
-                <p class="card-text">
-                    Here in this section you fill find some examples of my previous work and
-                    in progress.
-                </p>
-                <a href="./portfolio_projects.html" class="btn btn-primary">Projects</a>
+        <div class="d-flex justify-content-center">
+            <!-- card 1 bootstrap-->
+            <div class="card">
+                <img alt="profile.png" class="card-img-top" src="./imgs/portfolio_imgs/Fabian - profile 2022.png" />
+                <div class="card-body">
+                    <h5 class="card-title">Hello! this is me</h5>
+                    <p class="card-text">Find some key information about who I am</p>
+                    <a href="./portfolio_about.html" class="btn btn-primary">About me</a>
+                </div>
             </div>
+            <!-- end of card 1 -->
+
+
+
+            <!-- card 3 bootstrap-->
+            <div class="card">
+                <img alt="projects.png" class="card-img-top" src="./imgs/portfolio_imgs/pexels-lukas-669615.jpg" />
+                <div class="card-body">
+                    <h5 class="card-title">Projects</h5>
+                    <p class="card-text">
+                        Here in this section you fill find some examples of my previous work and
+                        in progress.
+                    </p>
+                    <a href="./portfolio_projects.html" class="btn btn-primary">Projects</a>
+                </div>
+            </div>
+            <!-- end of card 3 -->
+
         </div>
-        <!-- end of card 3 -->
-
-      
     </div>
-
-    
     <footer class="footer">
-        <nav class="navbar fixed-bottom navbar-dark bg-dark d-flex justify-content-center align-items-center text-center">
+        <nav class="navbar navbar-dark bg-dark d-flex justify-content-center align-items-center text-center">
             <div class="container-social d-flex justify-content-center align-items-center text-center">
                 <ul class="social-list">
                     <li class="social-item">
@@ -113,5 +108,7 @@
         </nav>
     </footer>
 </body>
+
+<script src="./javascript/portfolio.js"></script>
 
 </html>
