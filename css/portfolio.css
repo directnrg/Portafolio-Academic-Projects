@@ -270,8 +270,9 @@ body {
     align-content: center;
 }
 
-
-
+.navbar-collapse {
+  text-align: center;
+}
 
 .footer-link {
 color:white;
