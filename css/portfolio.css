@@ -270,8 +270,22 @@ body {
     align-content: center;
 }
 
-.navbar-collapse {
-  text-align: center;
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+    font-size: 1.5rem;
+    
+  }
+  .largerImgs {
+    height: auto;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: unset;
+    display: block;
+    align-content: center;
+  }
 }
 
 .footer-link {
