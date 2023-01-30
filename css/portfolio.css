@@ -334,8 +334,7 @@ color:white;
     margin: auto 0;
     align-items: center;
     align-content:center;
-   
-
+    flex-wrap: wrap;
   }
   .container .box {
     width: 100%;
